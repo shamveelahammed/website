@@ -1,0 +1,268 @@
+/*------------------------------------*\
+	COMMONS CLASSES
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "Arial", Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    margin-bottom: 1.1em;
+}
+
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover {
+    color: #02b8dd;
+}
+
+
+
+strong {
+    font-weight: bold;
+}
+
+body {
+    margin: auto;
+    background-color: #fff;
+    color: #777;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+span.typcn::before, i.typcn::before
+{
+    font-size: 2em;
+}
+
+span.x2:before, i.x2:before
+{
+    font-size: 3.4em;
+}
+
+span.x3:before, i.x3:before
+{
+    font-size: 4.4em;
+}
+
+span.x4:before, i.x4:before
+{
+    font-size: 6em;
+}
+/*------------------------------------*\
+	HEADER
+\*------------------------------------*/
+#nav-header{
+    color: #02b8dd;
+    float: left;
+    padding-top: 15px;
+}
+.nav-pills{
+    padding-top: 2px;
+    float: right;
+}
+
+.navbar-toggle .icon-bar {
+    border:1px solid dodgerblue;
+}
+
+/*------------------------------------*\
+	Banner
+\*------------------------------------*/
+#banner {
+    height: 580px;
+    padding-top: 1px;
+    background: #e8eced url('images/banner-2.jpeg') no-repeat center;
+}
+
+#banner h2 {
+    float: right;
+    margin: 180px 0 40px 0;
+    color: antiquewhite;
+}
+
+
+/*------------------------------------*\
+	SECTIONS
+\*------------------------------------*/
+
+#portfolio {
+    background-color: #f8fafa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#portfolio h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+
+#portfolio a img {
+    margin: 20px 0;
+}
+
+
+#resume {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#resume h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+
+#education {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#education .table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: lightgrey;
+}
+
+#courses {
+    background-color: whitesmoke;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#work .table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: lightgrey;
+}
+
+#interests{
+    padding: 55px 0;
+    text-align: center;
+}
+
+#interests h4 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+
+#table-body-w1{
+    text-align: left;
+}
+
+#table-body-w2{
+    text-align: left;
+}
+
+#table-body-ed1{
+    text-align: left;
+}
+
+#table-body-ed2{
+    text-align: left;
+}
+/*------------------------------------*\
+	CONTACT
+\*------------------------------------*/
+
+#contact{
+    padding: 50px 0;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#send_button{
+    margin-bottom: 20px;
+}
+
+#contact h4 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+
+@media screen and (max-width:767px) {
+    #gmaps{
+        max-width: 75% /* define a proper width that you think is right */
+    }
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/*------------------------------------*\
+	FOOTER
+\*------------------------------------*/
+
+footer
+{
+    background-color: rgba(36, 50, 59, 1);
+    padding-top: 2em;
+    padding-bottom: 1.2em;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+footer p
+{
+    color: #FFFFFF;
+}
+
+#icon-1,#icon-2,#icon-3,#icon-4, #icon-5,#icon-6{
+    padding: 5px;
+}
+
+
+#interests p {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+

@@ -1,0 +1,386 @@
+<!--
+	Wesbite by Shamveel Ahammed
+	shamveelahammed@gmail.com
+	Under the CCA 3.0 license
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shamveel Ahammed</title>
+    <meta name="description" content="Website">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Shamveel Ahammed">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Attach the master css file here-->
+    <link rel="stylesheet" href="main.css" />
+    <link data-require="fontawesome@*" data-semver="4.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script data-require="jquery@*" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Script to add the skills-->
+    <script type="text/javascript">
+        google.charts.load('current', {
+            callback: drawChart,
+            packages: ['corechart']
+        });
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Programming Languages', 'Expertise Level %'],
+                ['Java', 100],
+                ['C', 100],
+                ['Python', 100],
+                ['Web UX', 100],
+                ['IDE', 75],
+                ['Latex', 100],
+                ['Spring MVC', 75],
+                ['OpenGL', 75],
+                ['Matlab', 75],
+                ['Assembly', 50]
+            ]);
+
+            var options = {
+                theme: 'material',
+                vAxis: {
+                    ticks: [
+                        {v: 0, f: 'Eager to learn it'},
+                        {v: 25, f: 'Need to improve on it'},
+                        {v: 50, f: 'Basic Understanding'},
+                        {v: 75, f: 'Confident'},
+                        {v: 100, f: 'Master'}
+                    ]
+                }
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('barchart'));
+            chart.draw(data, options);
+
+            //Call window resize all the time
+            resize()
+
+            function resize () {
+                // change dimensions if necessary
+                chart.draw(data, options);
+            }
+            if (window.addEventListener) {
+                window.addEventListener('resize', resize);
+            }
+            else {
+                window.attachEvent('onresize', resize);
+            }
+        }
+    </script>
+
+<!--Used for popup-->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</head>
+
+<!--body starts-->
+<body>
+
+
+<!-- Header -->
+<header id="home" class="alt">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar" ></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a  id="nav-header" class="navbar-brand" href="index.html">Shamveel Ahammed</a>
+        </div>
+        <!--nav bar header-->
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav nav-pills">
+            <li role="presentation"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#home" >Home</a></li>
+            <li role="presentation"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#portfolio">Portfolio</a></li>
+            <li role="presentation"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#resume">Resume</a></li>
+            <li role="presentation"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#interests">Interests</a></li>
+            <li role="presentation"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Header ends -->
+
+<!--Banner-->
+<div id="banner">
+    <div class="container">
+        <h2><strong>Hi!</strong>
+            <br>I am a <a href="#portfolio"><i>Software Engineer</i></a>
+            <br> based in Manchester, UK.</h2>
+    </div>
+</div>
+
+<!--banner ends-->
+
+<!--Portfolio -->
+<section id="portfolio">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="100ms">
+            <h3>Portfolio</h3>
+            <p>Projects at the University/Self-Projects</p>
+            <a href="https://github.com/shamveelahammed/ElGamal" data-toggle="tooltip" data-placement="right"
+               class="fa fa-lock" title="El Gamal encryption" style="font-size:90px;color:darkgrey "></a>
+            <p> This website is open-sourced on Github </p>
+            <a href="https://github.com" data-toggle="tooltip" data-placement="right" class="fa fa-github"
+               title="Website" style="font-size:108px;color:red "></a>
+        </div>
+    </div>
+</section>
+<!-- Portfolio ends -->
+
+<!-- Resume -->
+
+<!--Skills-->
+<section id="resume" class="number wow fadeInUp" data-wow-delay="150ms">
+    <div class="container">
+        <div class="text-center wow fadeInUp">
+            <h3>Resume</h3>
+            <a role="button" class="btn btn-primary" href="documents/CV.pdf">Curriculum Vitae</a>
+            <h4>Skills</h4>
+            <div id="barchart" style="width: inherit; height: inherit;"></div>
+        </div>
+    </div>
+</section>
+
+<!--Work Experience-->
+<section id="work" class="number wow fadeInUp" data-wow-delay="150ms">
+    <div class="text-center wow fadeInUp">
+        <h4>Work Experience</h4>
+        <div class="container">
+            <table class="table table-striped">
+                <tbody>
+                <tr>
+                    <td style="width:20%" >2016-08 - 2016-10</td>
+                    <td id="table-body-w1" style="width:80%"><strong>Summer Intern,
+                        <a href="https://www.magnapass.co.uk" style="color: dodgerblue">MAGNAPASS CO.UK</a>, Manchester</strong>
+                        <br> Developed and implemented new features on the website including designing frameworks and
+                        database integration, and also participated in code reviews and debugging. Also,
+                        worked on developing the company’s website and integrating company’s database from
+                        MailChimp Servers.
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>2016-06 - 2016-07</td>
+                    <td id="table-body-w2"><strong>Website Developer,
+                        <a href="http://www.tradeyoung.com" style="color: dodgerblue">TRADE YOUNG</a>, Dhaka</strong>
+                        <br>Worked as the main lead to develop the company’s website, which implemented a modern
+                        custom user interface, utilising a lot of visual graphics to
+                        give a minimalistic clean User Interface experience.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!--Education-->
+<section id="education" class="number wow fadeInUp" data-wow-delay="150ms">
+    <h4>Education</h4>
+    <div class="container">
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <td style="width:20%" >2008-2014</td>
+                <td id="table-body-ed1" style="width:80%"><strong>
+                    <a href="http://www.ithsbd.net" style="color: dodgerblue">International Turkish Hope School</a> , Dhaka, Bangladesh.</strong>
+                    <br> <i>A levels examination conducted by Pearson Edexcel:</i>
+                    <ul>
+                        <li>Mathematics (A*)</li>
+                        <li>Pure Mathematics (A*)</li>
+                        <li>Physics (A)</li>
+                        <li>Chemistry (A)</li>
+                    </ul>
+
+                    <br> <i>IGCSEs examination conducted by Pearson Edexcel:</i>
+                    <br> 8 (5 A*, 3 A ) including Maths, Physics, Chemistry, and English.
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20%" >2015-2020</td>
+                <td id="table-body-ed2" style="width:80%">
+                    <strong><a href="http://www.manchester.ac.uk" style="color: dodgerblue">University of Manchester</a></strong>
+                    <br> Third year ongoing
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="courses" class="number wow fadeInUp" data-wow-delay="150ms">
+    <h4>Courses</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xs-6 col-md-6">
+                <h5>First Year</h5>
+                <ul><li>Mathematical Techniques for Computer Science</li>
+                    <li>Fundamentals of Computation</li>
+                    <li>Fundamentals of Computer Engineering</li>
+                    <li>Fundamentals of Artificial Intelligence</li>
+                    <li>Fundamentals of Computer Architecture</li>
+                    <li>Object Oriented Programming with Java</li>
+                    <li>Fundamentals of Distributed Systems</li>
+                    <li> First Year Team Project</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-xs-6 col-md-6">
+                <h5>Second Year</h5>
+                <ul>
+                    <li>Fundamentals of Databases</li>
+                    <li>Operating Systems</li>
+                    <li>Algorithms and Imperative Programming</li>
+                    <li>Distributed Computing</li>
+                    <li>Logic and Modelling</li>
+                    <li>Machine Learning and Optimisation</li>
+                    <li>Computer Graphics and Image Processing</li>
+                    <li>System Architecture</li>
+                    <li>Manchester Leadership Program</li>
+                    <li>Software Engineering Team Project</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Resume ends -->
+
+<!-- Interests -->
+<section id="interests">
+    <div class="text-center wow fadeInUp" data-wow-delay="100ms">
+        <div class="container">
+            <h4>Interests</h4>
+            <p>
+                I am a member of the University of Manchester’s Computer Science Society (CSsoc)
+                and the Bangladesh Student Society. I was the Media and Communications Manager,
+                where I created and promoted events through social media. I also was a PASS leader for a year and
+                now have a role of the University's Computer Science Student Ambassador.
+                <br>
+                Aside from these, I do enjoy listening to music, driving and digital photography.</p>
+        </div>
+    </div>
+</section>
+<!-- Interests ends-->
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="text-center wow fadeInUp" data-wow-delay="100ms">
+                <h4>Contact</h4>
+                <div class="col-sm-6 col-xs-6 col-md-6">
+                    <!--contact form-->
+                    <form action="https://formspree.io/shamveelahammed@gmail.com"
+                          method="POST">
+                        <label for="name" style="color: inherit">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+
+                        <label for="subject" style="color: inherit">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject..">
+
+                        <label for="email" style="color: inherit">Email</label>
+                        <input type="text" id="email" name="lastname" placeholder="Your email address..">
+
+
+                        <label for="message" style="color: inherit">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <button id="send_button" type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+                <div class="text-center wow fadeInUp" data-wow-delay="100ms">
+                    <div class="col-sm-6 col-xs-6 col-md-6">
+                        <p><strong>Addr:</strong> Hulme Hall, Oxford Street, Victoria Park,
+                            <br>Manchester,M14 5RR.
+                            <br><strong>Tel:</strong> +44(0)776 379 9603.
+                            <br><strong>Email :</strong>shamveelahammed@gmail.com.
+                        </p>
+                        <iframe id = "gmaps"
+                                width="600"
+                                height="450"
+                                frameborder="0" style="border:0"
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAD3nQMoYjl0qpSPo2fZ4nEaT5KFty1imE
+                        &q=M14 5RR" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="text-center wow fadeInUp">
+                <h3>Connect with me </h3>
+                <a id="icon-1" href="mailto:shamveelahammed@gmail.com?Subject=" class="fa fa-envelope" style="font-size:24px ;color:ghostwhite"></a>
+                <a id="icon-2" href="https://uk.linkedin.com/in/shamveelahammed" class="fa fa-linkedin-square" style="font-size:24px;color:ghostwhite"></a>
+                <a id="icon-3" href="https://github.com/shamveelahammed" class="fa fa-github" style="font-size:24px;color:ghostwhite"></a>
+                <a id="icon-4" href="https://www.instagram.com/shamveel_ahammed/" class="fa fa-instagram" style="font-size:24px;color:ghostwhite"></a>
+                <a id="icon-5" href="https://www.facebook.com/shamveel.ahammed" class="fa fa-facebook-square" style="font-size:24px;color:ghostwhite"></a>
+                <a id="icon-6" href="https://twitter.com/sAhammed" class="fa fa-twitter" style="font-size:24px;color:ghostwhite"></a>
+                <p>Copyright 2017© | All rights reserved by shamveelahammed</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer ends -->
+
+
+<!--=============================================-->
+<!-- Bootstrap core CSS-->
+<link href="bootstrap/css/theme.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:300,700,900,500' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/pushy.css">
+<link rel="stylesheet" href="assets/css/masonry.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+<script>
+    window.odometerOptions = {
+        selector: '.odometer',
+        format: '(,ddd)',
+        duration: 13000,
+        theme: 'default'
+    };
+</script>
+
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Bootstrap core JavaScript-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-scrollspy.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
+<script src="assets/js/masonry.js"></script>
+<script src="assets/js/pushy.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/odometer.js"></script>
+
+<!-- Bootstrap core JavaScript Ends-->
+<!--=============================================-->
+
+</body>
+<!-- body ends here -->
+</html>
