@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="main.css" />
     <link data-require="fontawesome@*" data-semver="4.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet/scss" type="text/css" href="instafeed.scss">
 
     <script data-require="jquery@*" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -72,6 +73,7 @@
             }
         }
     </script>
+
 
 <!--Used for popup-->
     <script>
@@ -132,7 +134,7 @@
             <a href="https://github.com/shamveelahammed/ElGamal" data-toggle="tooltip" data-placement="right"
                class="fa fa-lock" title="El Gamal encryption" style="font-size:90px;color:darkgrey "></a>
             <p> This website is open-sourced on Github </p>
-            <a href="https://github.com" data-toggle="tooltip" data-placement="right" class="fa fa-github"
+            <a href="https://github.com/shamveelahammed/website" data-toggle="tooltip" data-placement="right" class="fa fa-github"
                title="Website" style="font-size:108px;color:red "></a>
         </div>
     </div>
@@ -193,13 +195,13 @@
         <table class="table table-striped">
             <tbody>
             <tr>
-                <td style="width:20%" >2008-2014</td>
+                <td style="width:20%" >2008 - 2014</td>
                 <td id="table-body-ed1" style="width:80%"><strong>
                     <a href="http://www.ithsbd.net" style="color: dodgerblue">International Turkish Hope School</a> , Dhaka, Bangladesh.</strong>
                     <br> <i>A levels examination conducted by Pearson Edexcel:</i>
                     <ul>
                         <li>Mathematics (A*)</li>
-                        <li>Pure Mathematics (A*)</li>
+                        <li>Pure Mathematics (A*) <i>(Notable Achievement: Country Highest Marks in Pure Mathematics)</i></li>
                         <li>Physics (A)</li>
                         <li>Chemistry (A)</li>
                     </ul>
@@ -209,7 +211,7 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:20%" >2015-2020</td>
+                <td style="width:20%" >2015 - 2020</td>
                 <td id="table-body-ed2" style="width:80%">
                     <strong><a href="http://www.manchester.ac.uk" style="color: dodgerblue">University of Manchester</a></strong>
                     <br> Third year ongoing
@@ -269,6 +271,25 @@
                 <br>
                 Aside from these, I do enjoy listening to music, driving and digital photography.</p>
         </div>
+        <div id="instafeed">
+            <h6>Instafeed:</h6>
+        </div>
+        <script src="assets/js/instafeed.min.js"></script>
+        <script type="text/javascript">
+            var userFeed = new Instafeed({
+                get: 'user',
+                userId: '262397453',
+                clientId: '5542fe5ebf3b43be8d0bb6f53eda0c49',
+                accessToken: '262397453.5542fe5.bee426fc95df4ffcbbbf8c07f185c5a4',
+                resolution: 'thumbnail',
+                template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+                sortBy: 'most-recent',
+                limit: 6,
+                links: false
+            });
+            userFeed.run();
+        </script>
+
     </div>
 </section>
 <!-- Interests ends-->
@@ -319,7 +340,6 @@
         </div>
     </div>
 </section>
-
 
 <!-- footer -->
 <footer>
