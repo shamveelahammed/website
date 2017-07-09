@@ -23,7 +23,6 @@ a:hover {
 }
 
 
-
 strong {
     font-weight: bold;
 }
@@ -60,6 +59,12 @@ span.x4:before, i.x4:before
 {
     font-size: 6em;
 }
+
+
+/*Body wrapper*/
+#wrapper {
+    margin: 0px -15px 0px 0px;
+}
 /*------------------------------------*\
 	HEADER
 \*------------------------------------*/
@@ -67,6 +72,7 @@ span.x4:before, i.x4:before
     color: #02b8dd;
     float: left;
     padding-top: 15px;
+
 }
 .nav-pills{
     padding-top: 2px;
@@ -76,6 +82,7 @@ span.x4:before, i.x4:before
 .navbar-toggle .icon-bar {
     border:1px solid dodgerblue;
 }
+
 
 /*------------------------------------*\
 	Banner
@@ -208,7 +215,7 @@ span.x4:before, i.x4:before
 
 @media only screen and (max-width:576px) {
     #contact-text{
-        font-size: 0.94em ;
+        font-size: 0.76em ;
     }
 }
 
@@ -272,4 +279,3 @@ footer p
     margin-left: 20px;
     margin-right: 20px;
 }
-
