@@ -1,5 +1,5 @@
 # Website
-This is a static website that is currently underdevelopment. This website is primarily designed to be a CV based website, where it would be really easy to highlight your skills and interests along with your academic background. These website also uses 3 apis to demostrate the skills, interests and contact me pportion of the website. 
+This is a static website that is currently underdevelopment. This website is primarily designed to be a CV based website, where it would be really easy to highlight your skills and interests along with your academic background. These website also uses 3 apis to demostrate the skills, interests and contact me portion of the website. 
 
 ## Getting Started
 
