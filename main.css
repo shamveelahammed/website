@@ -175,8 +175,9 @@ span.x4:before, i.x4:before
 }
 
 #table-body-w2{
-    text-align: left;
-}
+     text-align: left;
+ }
+
 
 #table-body-ed1{
     text-align: left;
@@ -279,3 +280,4 @@ footer p
     margin-left: 20px;
     margin-right: 20px;
 }
+

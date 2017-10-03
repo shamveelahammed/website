@@ -35,10 +35,10 @@
                 ['Python', 100],
                 ['Web UX', 100],
                 ['IDE', 75],
-                ['Latex', 100],
                 ['Spring MVC', 75],
                 ['OpenGL', 75],
                 ['Matlab', 75],
+                ['Unix', 100],
                 ['Assembly', 50]
             ]);
 
@@ -75,7 +75,7 @@
     </script>
 
 
-<!--Used for popup-->
+<!--Used for popup window-->
     <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
@@ -147,12 +147,13 @@
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="100ms">
             <h3>Portfolio</h3>
-            <p>Projects at the University/Self-Projects</p>
-            <a href="https://github.com/shamveelahammed/ElGamal" data-toggle="tooltip" data-placement="right"
-               class="fa fa-lock" title="El Gamal encryption" style="font-size:90px;color:darkgrey "></a>
-            <p> This website is open-sourced on Github </p>
-            <a href="https://github.com/shamveelahammed/website" data-toggle="tooltip" data-placement="right" class="fa fa-github"
-               title="Website" style="font-size:108px;color:red "></a>
+            <p style="font-size: large">Projects at the University/Self-Projects</p>
+            <a href="https://github.com/shamveelahammed" data-toggle="tooltip" data-placement="right" class="fa fa-github"
+                  title="Projects" style="font-size:108px;color:midnightblue "></a>
+
+            <p style="padding-top: 30px"> This website
+                is running on <a href="https://aws.amazon.com/ec2/" style="color: dodgerblue">Amazon EC2</a>
+                and is open-sourced on<a href="https://github.com/shamveelahammed/website" style="color: royalblue"> Github</a> </p>
         </div>
     </div>
 </section>
@@ -166,7 +167,7 @@
         <div class="text-center wow fadeInUp">
             <h3>Resume</h3>
             <a role="button" class="btn btn-primary" href="documents/CV.pdf">Curriculum Vitae</a>
-            <h4>Skills</h4>
+            <h4 style="padding-top: 30px">Skills</h4>
             <div id="barchart" style="width: inherit; height: inherit;"></div>
         </div>
     </div>
@@ -180,8 +181,28 @@
             <table class="table table-striped">
                 <tbody>
                 <tr>
+                    <td style="width:20%" >2017-08 - PRESENT</td>
+                    <td id="table-body-w1" style="width:80%"><strong>HORNET REPRESENTATIVE,
+                        <a href="http://hornet.manchester.ac.uk/" style="color: dodgerblue">UNIVERSITY OF MANCHESTER</a>,
+                        Manchester</strong>
+                        <br> Worked as part of a large team in conjunction with PSS IT Support Staff,
+                        the Hornet Reps support computers, the residential computer networks and computer clusters
+                        to provide computer assistance to residents in the University’s halls of residence.
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:20%" >2017-07 - 2017-08 </td>
+                    <td style="text-align: left"><strong>Summer Intern,
+                        <a href="http://tradeyoung.com/mohonaPack/index.html" style="color: dodgerblue">MOHONA PACKAGES</a>,
+                        Dhaka</strong>
+                        <br> Created a user-friendly logistics software to calculate raw materials intake for a
+                        specific order and generate delivery/production reports.
+                    </td>
+                </tr>
+                <tr>
                     <td style="width:20%" >2016-08 - 2016-10</td>
-                    <td id="table-body-w1" style="width:80%"><strong>Summer Intern,
+                    <td id="table-body-w2" style="width:80%"><strong>Summer Intern,
                         <a href="https://www.magnapass.co.uk" style="color: dodgerblue">MAGNAPASS CO.UK</a>, Manchester</strong>
                         <br> Developed and implemented new features on the website including designing frameworks and
                         database integration, and also participated in code reviews and debugging. Also,
@@ -192,13 +213,14 @@
                 </tr>
                 <tr>
                     <td>2016-06 - 2016-07</td>
-                    <td id="table-body-w2"><strong>Website Developer,
+                    <td style="text-align: left"><strong>Website Developer,
                         <a href="http://www.tradeyoung.com" style="color: dodgerblue">TRADE YOUNG</a>, Dhaka</strong>
                         <br>Worked as the main lead to develop the company’s website, which implemented a modern
                         custom user interface, utilising a lot of visual graphics to
                         give a minimalistic clean User Interface experience.
                     </td>
                 </tr>
+
                 </tbody>
             </table>
         </div>
@@ -215,7 +237,7 @@
                 <td style="width:20%" >2008 - 2014</td>
                 <td id="table-body-ed1" style="width:80%"><strong>
                     <a href="http://www.ithsbd.net" style="color: dodgerblue">International Turkish Hope School</a> , Dhaka, Bangladesh.</strong>
-                    <br> <i>A levels examination conducted by Pearson Edexcel:</i>
+                    <br> <i> <strong>A levels</strong> examination conducted by Pearson Edexcel:</i>
                     <ul>
                         <li>Mathematics (A*)</li>
                         <li>Pure Mathematics (A*) <i>(Notable Achievement: Country Highest Marks in Pure Mathematics)</i></li>
@@ -223,7 +245,7 @@
                         <li>Chemistry (A)</li>
                     </ul>
 
-                    <br> <i>IGCSEs examination conducted by Pearson Edexcel:</i>
+                    <br> <i><strong>IGCSEs</strong> examination conducted by Pearson Edexcel:</i>
                     <br> 8 (5 A*, 3 A ) including Maths, Physics, Chemistry, and English.
                 </td>
             </tr>
@@ -279,17 +301,24 @@
 <section id="interests">
     <div class="text-center wow fadeInUp" data-wow-delay="100ms">
         <div class="container">
-            <h4>Interests</h4>
-            <p>
-                I am a member of the University of Manchester’s Computer Science Society (CSsoc)
-                and the Bangladesh Student Society. I was the Media and Communications Manager,
-                where I created and promoted events through social media. I also was a PASS leader for a year and
-                now have a role of the University's Computer Science Student Ambassador.
-                <br>
-                Aside from these, I do enjoy listening to music, driving and digital photography.</p>
+            <h4>Hobbies and Interests</h4>
+            <p> I am a student ambassador for our Computer Science department at the University and I try to
+                actively participate in societies like the Computer Science Society (CSsoc)
+                and Bangladesh Student Society (BSS).</p>
+
+            <p style="padding-top: 3px">
+                I am also involved with numerous volunteering campaigns and was awarded with the
+                <a href="http://www.college.manchester.ac.uk/programmesandchallenges/manchesterleadershipprogrammemlp/"
+                   style="color: dodgerblue">
+                    Manchester Leadership Programme</a> for completing 20 hours of volunteering in a single term.</p>
+
+            <p style="padding-top: 3px">
+                Aside from that, I enjoy socialising with others, listening to music and digital photography enthusiast.
+            </p>
+
         </div>
         <div id="instafeed">
-            <h6>Instafeed:</h6>
+            <h6>Check out my Instafeed below:</h6>
         </div>
         <script src="assets/js/instafeed.min.js"></script>
         <script type="text/javascript">
@@ -374,7 +403,10 @@
                 <a id="icon-4" href="https://www.instagram.com/shamveel_ahammed/" class="fa fa-instagram" style="font-size:24px;color:ghostwhite"></a>
                 <a id="icon-5" href="https://www.facebook.com/shamveel.ahammed" class="fa fa-facebook-square" style="font-size:24px;color:ghostwhite"></a>
                 <a id="icon-6" href="https://twitter.com/sAhammed" class="fa fa-twitter" style="font-size:24px;color:ghostwhite"></a>
-                <p>Copyright 2017© | All rights reserved by shamveelahammed</p>
+                <p style="font-size: small;padding-top: 40px">Copyright 2017© | All rights reserved by <a href="index.html">shamveelahammed</a></p>
+
+                <p style="font-size: x-small">This website uses
+                    <a href="https://analytics.google.com/analytics/web/"; style="color: lightskyblue">Google Analytics</a> </p>
             </div>
         </div>
     </div>
