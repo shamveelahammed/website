@@ -1,7 +1,7 @@
 # Website
 This is a static website that is currently underdevelopment. This website is primarily designed to be a CV based website, where it would be really easy to highlight your skills and interests along with your academic background. These website also uses 3 apis to demostrate the 'skills', 'interests' and 'contact me' section of the website. 
     
-- This website is running on Amazon Elastic Compute Cloud (EC2) using the amazon route 53 and S3 bucket services.
+- This website is running on Amazon Elastic Compute Cloud (EC2) using the amazon route 53,S3 bucket and CloudFront Distribution services.
 
 - The domain was also registered from Amazon Domain Services.
 
@@ -17,7 +17,7 @@ What things you need to install the software and how to install them.
 - A registered domain
 
 ```
-WebStrom IDE {Suggested}
+WebStorm IDE {Suggested}
 
 ```
 
